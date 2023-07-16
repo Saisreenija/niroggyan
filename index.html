@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+</head>
+<body>
+    <button onclick={downloadData} id="pdf-link">Download pdf</button>
+</body>
+<script defere src="./js/pdfJSON.js"></script>
+<script>
+// document.getElementById('pdf-link').addEventListener('click', ()=> pdfFile())
+function downloadData(){
+    pdfFile()
+}
+</script>
+<!-- <script src="./js/parseJSON.js"></script> -->
+<!-- <script defer src="'./js/sendPDF.js"></script> -->
+</html>
